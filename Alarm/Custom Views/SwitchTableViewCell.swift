@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol SwitchTableViewCellDelegate: class {
+    func switchCellSwitchValueChanged(cell: SwitchTableViewCell)
+}
+
 class SwitchTableViewCell: UITableViewCell {
+    
+    weak var cellDelegate: SwitchTableViewCellDelegate?
     
     var alarm: Alarm? {
         didSet {
@@ -27,6 +33,9 @@ class SwitchTableViewCell: UITableViewCell {
         alarmSwitch.isOn = alarm.isEnabled
     }
     @IBAction func switchValueChanged(_ sender: UISwitch) {
+        cellDelegate?.switchCellSwitchValueChanged(cell: self)
     }
     
 }
+
+
