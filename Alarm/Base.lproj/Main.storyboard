@@ -45,7 +45,7 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udd-K2-n6c">
                                             <rect key="frame" x="347" y="45.5" width="51" height="30.5"/>
                                             <connections>
-                                                <action selector="switchValueChanged:" destination="SmF-Ea-Q8i" eventType="valueChanged" id="7NM-ax-VIC"/>
+                                                <action selector="switchValueChanged:" destination="SmF-Ea-Q8i" eventType="valueChanged" id="Ojb-Rg-9QV"/>
                                             </connections>
                                         </switch>
                                     </subviews>

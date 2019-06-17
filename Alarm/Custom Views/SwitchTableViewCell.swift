@@ -12,7 +12,8 @@ class SwitchTableViewCell: UITableViewCell {
     
     var alarm: Alarm? {
         didSet {
-            updateViews()
+            guard let alarm = alarm else {return}
+            updateViews(alarm: alarm)
         }
     }
 
@@ -20,11 +21,12 @@ class SwitchTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var alarmSwitch: UISwitch!
     
-    func updateViews() {
-        guard let alarm = alarm else {return}
+    func updateViews(alarm: Alarm) {
         nameLabel.text = alarm.name
         timeLabel.text = alarm.fireTimeAsString
         alarmSwitch.isOn = alarm.isEnabled
+    }
+    @IBAction func switchValueChanged(_ sender: UISwitch) {
     }
     
 }

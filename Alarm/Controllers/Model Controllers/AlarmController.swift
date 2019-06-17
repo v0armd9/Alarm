@@ -14,13 +14,13 @@ class AlarmController {
     
     var alarms: [Alarm] = []
     
-    var mockAlarms: [Alarm] = {
-        let nineAM = Alarm(fireDate: Date(), name: "Morning Treat", isEnabled: true)
-        let noonPM = Alarm(fireDate: Date(), name: "Lunch Time", isEnabled: true)
-        let ninePM = Alarm(fireDate: Date(), name: "Bed Time", isEnabled: false)
-        
-        return [nineAM, noonPM, ninePM]
-    }()
+//    var mockAlarms: [Alarm] = {
+//        let nineAM = Alarm(fireDate: Date(), name: "Morning Treat", isEnabled: true)
+//        let noonPM = Alarm(fireDate: Date(), name: "Lunch Time", isEnabled: true)
+//        let ninePM = Alarm(fireDate: Date(), name: "Bed Time", isEnabled: false)
+//
+//        return [nineAM, noonPM, ninePM]
+//    }()
     
     
     func addAlarm(fireDate: Date, name: String, isEnabled: Bool) -> Alarm {
