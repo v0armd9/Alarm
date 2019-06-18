@@ -25,25 +25,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="121.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-Nd-xvp">
-                                            <rect key="frame" x="8" y="8" width="42" height="105.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-Nd-xvp">
+                                            <rect key="frame" x="8" y="8" width="146.5" height="105.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-jo-6El">
-                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="27"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="100" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-jo-6El">
+                                                    <rect key="frame" x="0.0" y="0.0" width="146.5" height="80"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
+                                                    <color key="textColor" red="0.65254681339999998" green="0.54736266420000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s24-XS-rPL">
-                                                    <rect key="frame" x="0.0" y="79" width="42" height="26.5"/>
+                                                    <rect key="frame" x="0.0" y="85" width="146.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udd-K2-n6c">
                                             <rect key="frame" x="347" y="45.5" width="51" height="30.5"/>
+                                            <color key="onTintColor" red="0.65254681339999998" green="0.54736266420000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <action selector="switchValueChanged:" destination="SmF-Ea-Q8i" eventType="valueChanged" id="Ojb-Rg-9QV"/>
                                             </connections>
@@ -103,7 +103,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-8T-xLs">
-                                                    <rect key="frame" x="0.0" y="-87" width="414" height="217"/>
+                                                    <rect key="frame" x="0.0" y="-87" width="414" height="217.5"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="582494950.86567497">
                                                         <!--2019-06-17 20:09:10 +0000-->
                                                     </date>
@@ -155,7 +155,6 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-LU-qsm">
                                                     <rect key="frame" x="41.5" y="7" width="331" height="30"/>
-                                                    <state key="normal" title="Enable"/>
                                                     <connections>
                                                         <action selector="enableButtonTapped:" destination="Odj-vG-WE1" eventType="touchUpInside" id="cY5-N0-SHg"/>
                                                     </connections>

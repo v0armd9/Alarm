@@ -11,7 +11,7 @@ import Foundation
 class Alarm: Codable {
     var fireDate: Date
     var name: String
-    var isEnabled: Bool
+    var isEnabled: Bool = true
     var uuid: String
     
     var fireTimeAsString: String {

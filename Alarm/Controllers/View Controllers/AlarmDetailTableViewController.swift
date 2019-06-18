@@ -10,6 +10,11 @@ import UIKit
 
 class AlarmDetailTableViewController: UITableViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpAlarmButton()
+    }
+    
     var alarm: Alarm? {
         didSet {
             loadViewIfNeeded()
@@ -36,11 +41,9 @@ class AlarmDetailTableViewController: UITableViewController {
     func setUpAlarmButton(){
         switch alarmIsOn {
         case true:
-            enableButton.backgroundColor = UIColor.cyan
             enableButton.setTitle("Enabled", for: .normal)
         case false:
-            enableButton.backgroundColor = UIColor.red
-            enableButton.setTitle("Disable", for: .normal)
+            enableButton.setTitle("Disabled", for: .normal)
         }
     }
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
