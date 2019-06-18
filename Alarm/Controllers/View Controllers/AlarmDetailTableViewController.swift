@@ -10,13 +10,13 @@ import UIKit
 
 class AlarmDetailTableViewController: UITableViewController {
     
-    var alarm: Alarm?
-//        didSet {
-//            loadViewIfNeeded()
-//            updateViews()
-//        }
-//    }
-    
+    var alarm: Alarm? {
+        didSet {
+            loadViewIfNeeded()
+            updateViews()
+        }
+    }
+
     var alarmIsOn: Bool = true
     
     @IBOutlet weak var datePicker: UIDatePicker!

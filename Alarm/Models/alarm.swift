@@ -17,8 +17,8 @@ class Alarm {
     var fireTimeAsString: String {
         get {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.timeStyle = .none
+            dateFormatter.dateStyle = .none
+            dateFormatter.timeStyle = .short
             let date = fireDate
             dateFormatter.locale = Locale(identifier: "en_US")
             return(dateFormatter.string(from: date))

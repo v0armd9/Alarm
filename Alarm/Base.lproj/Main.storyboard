@@ -63,7 +63,7 @@
                                     <outlet property="alarmSwitch" destination="Udd-K2-n6c" id="vXO-FO-8ER"/>
                                     <outlet property="nameLabel" destination="s24-XS-rPL" id="zaW-2S-ULD"/>
                                     <outlet property="timeLabel" destination="sqG-jo-6El" id="txd-CD-kIH"/>
-                                    <segue destination="Odj-vG-WE1" kind="show" id="Wym-va-Rnf"/>
+                                    <segue destination="Odj-vG-WE1" kind="show" identifier="toEditAlarmSegue" id="Wym-va-Rnf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -213,6 +213,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gK5-28-K5k"/>
+        <segue reference="Wym-va-Rnf"/>
     </inferredMetricsTieBreakers>
 </document>
