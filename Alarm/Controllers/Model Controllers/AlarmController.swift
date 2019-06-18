@@ -14,19 +14,9 @@ class AlarmController {
     
     var alarms: [Alarm] = []
     
-//    var mockAlarms: [Alarm] = {
-//        let nineAM = Alarm(fireDate: Date(), name: "Morning Treat", isEnabled: true)
-//        let noonPM = Alarm(fireDate: Date(), name: "Lunch Time", isEnabled: true)
-//        let ninePM = Alarm(fireDate: Date(), name: "Bed Time", isEnabled: false)
-//
-//        return [nineAM, noonPM, ninePM]
-//    }()
-    
-    
-    func addAlarm(fireDate: Date, name: String, isEnabled: Bool) -> Alarm {
+    func addAlarm(fireDate: Date, name: String, isEnabled: Bool) {
         let newAlarm = Alarm(fireDate: fireDate, name: name, isEnabled: isEnabled)
         alarms.append(newAlarm)
-        return newAlarm
         //saveToPersistence()
     }
     
@@ -42,5 +32,9 @@ class AlarmController {
             self.alarms.remove(at: index)
         }
         //saveToPersistence()
+    }
+    
+    func toggleEnabled(for alarm: Alarm) {
+        alarm.isEnabled = !alarm.isEnabled
     }
 }

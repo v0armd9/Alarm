@@ -185,7 +185,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="alarmNameTextField" destination="Hb8-qH-JqX" id="jdY-sY-uZ1"/>
-                        <outlet property="datePickerCell" destination="2Pq-8T-xLs" id="pDq-5M-kJg"/>
+                        <outlet property="datePicker" destination="2Pq-8T-xLs" id="gfe-IJ-3FK"/>
                         <outlet property="enableButton" destination="Frf-LU-qsm" id="bj4-Bq-A3m"/>
                     </connections>
                 </tableViewController>
