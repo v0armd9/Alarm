@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Alarm {
+class Alarm: Codable {
     var fireDate: Date
     var name: String
     var isEnabled: Bool
@@ -19,8 +19,8 @@ class Alarm {
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .none
             dateFormatter.timeStyle = .short
-            let date = fireDate
             dateFormatter.locale = Locale(identifier: "en_US")
+            let date = fireDate
             return(dateFormatter.string(from: date))
         }
     }

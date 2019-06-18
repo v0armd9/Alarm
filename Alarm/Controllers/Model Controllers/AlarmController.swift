@@ -10,6 +10,10 @@ import Foundation
 
 class AlarmController {
     
+    init() {
+        loadFromPersistentStore()
+    }
+    
     static let sharedInstance = AlarmController()
     
     var alarms: [Alarm] = []
@@ -17,24 +21,55 @@ class AlarmController {
     func addAlarm(fireDate: Date, name: String, isEnabled: Bool) {
         let newAlarm = Alarm(fireDate: fireDate, name: name, isEnabled: isEnabled)
         alarms.append(newAlarm)
-        //saveToPersistence()
+        saveToPersistentStore()
     }
     
     func update(alarm: Alarm, fireDate: Date, name: String, isEnabled: Bool) {
         alarm.fireDate = fireDate
         alarm.name = name
         alarm.isEnabled = isEnabled
-        //saveToPersistence()
-    }
+        saveToPersistentStore()
+        }
     
     func delete(alarm: Alarm) {
         if let index = self.alarms.firstIndex(where: {$0 == alarm}) {
             self.alarms.remove(at: index)
         }
-        //saveToPersistence()
+        saveToPersistentStore()
     }
     
     func toggleEnabled(for alarm: Alarm) {
         alarm.isEnabled = !alarm.isEnabled
+    }
+    
+    func fileURL() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = paths[0]
+        let fileName = "Alarm.json"
+        let url = documentDirectory.appendingPathComponent(fileName)
+        return url
+    }
+    
+    func saveToPersistentStore() {
+        let jsonEncoder = JSONEncoder()
+        
+        do {
+            let data = try jsonEncoder.encode(AlarmController.sharedInstance.alarms)
+            try data.write(to: fileURL())
+        } catch let error {
+            print("Error saving to persistent store: \(error.localizedDescription)")
+        }
+    }
+    
+    func loadFromPersistentStore() {
+        let jsonDecoder = JSONDecoder()
+        
+        do {
+            let data = try Data(contentsOf: fileURL())
+            let decodedAlarm = try jsonDecoder.decode([Alarm].self, from: data)
+            self.alarms = decodedAlarm
+        } catch let error {
+            print("Error loading from persistent store: \(error.localizedDescription)")
+        }
     }
 }
