@@ -95,15 +95,15 @@
                         <sections>
                             <tableViewSection id="rr4-0k-462">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8Z6-G1-6ip">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="175" id="8Z6-G1-6ip">
+                                        <rect key="frame" x="0.0" y="35" width="414" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Z6-G1-6ip" id="7Bg-Uo-YbB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="174.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-8T-xLs">
-                                                    <rect key="frame" x="0.0" y="-87" width="414" height="217.5"/>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-8T-xLs">
+                                                    <rect key="frame" x="0.0" y="-87" width="414" height="348.5"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="582494950.86567497">
                                                         <!--2019-06-17 20:09:10 +0000-->
                                                     </date>
@@ -122,7 +122,7 @@
                             <tableViewSection id="JAO-hP-PUR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sc3-Pv-70P">
-                                        <rect key="frame" x="0.0" y="115" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="246" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sc3-Pv-70P" id="rqf-xT-Gql">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -147,7 +147,7 @@
                             <tableViewSection id="OTv-WA-Ecs">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FuE-x4-Y9d">
-                                        <rect key="frame" x="0.0" y="195" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="326" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FuE-x4-Y9d" id="Uzu-kJ-pvg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>

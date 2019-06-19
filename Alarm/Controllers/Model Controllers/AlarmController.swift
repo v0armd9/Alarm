@@ -51,6 +51,7 @@ class AlarmController: AlarmScheduler {
         if let index = self.alarms.firstIndex(where: {$0 == alarm}) {
             self.alarms.remove(at: index)
         }
+        cancelUserNotifications(for: alarm)
         saveToPersistentStore()
     }
     
